@@ -5,6 +5,8 @@ import Search from './custom/search/search.jsx';
 
 // ----------logo-----------------
 import logoImg from './images/magicPixel.png';
+import Search2 from './custom/search/search-2.jsx';
+import MediaIcon from './custom/media-icon.jsx';
 
 const toggleSidebar = () => {
   let sidebar = document.querySelector('.sidebar-container');
@@ -22,14 +24,16 @@ const Header = ({ location }) => {
     <>
       <header>
         <nav className="container-fluid">
-          <div className="d-flex justify-content-between align-items-center">
+          <div className="d-flex justify-content-between ">
             <div className={'navBarHeader'}>
               <i className="fa-solid fa-bars me-3 d-block d-xl-none" onClick={toggleSidebar}></i>
               <Link to={'/'} className={'navBarBrand'}>
                 <img className={'img-responsive displayInline'} src={logoImg} alt={'magic pixel'} />
               </Link>
             </div>
-            <Search />
+            <Search2 />
+            <MediaIcon/>
+            {/* <Search /> */}
           </div>
         </nav>
 

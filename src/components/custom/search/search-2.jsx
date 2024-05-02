@@ -58,12 +58,22 @@ const Search2 = () => {
 
   return (
     <div>
-      <input type="text" value={query} onChange={handleInputChange} placeholder="Search..." />
-      <ul>
+     <div className="search-form-container  ">
+      <form className="form-group">
+      <input type="text" className="search-bar"  value={query} onChange={handleInputChange} style={{marginLeft:'0px'}} placeholder="Search..." />
+          <button className="searchicon">
+            <i className="fa-solid fa-magnifying-glass" style={{ color: '#1B0C8A' }}></i>
+          </button>
+       
+      </form>
+    </div>
+    
+     
+      <ul style={{listStyle:'none'}}>
         {results.map((result, i) => (
           <li key={i}>
             <Link to={result.url}>
-              <h3>{result.title}</h3>
+              <h6 style={{color:'var(--link)'}}>{result.title}</h6>
             </Link>
           </li>
         ))}

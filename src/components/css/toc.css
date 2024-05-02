@@ -31,7 +31,7 @@
 
 .right-side-toc .rightSideBarUL li {
   list-style-type: none;
-  border-left: 1px solid #e6ecf1;
+  /* border-left: 1px solid #e6ecf1; */
   border-left-color: rgb(230, 236, 241);
 }
 
@@ -41,6 +41,11 @@
   line-height: 1.5;
   padding: 7px 24px 7px 16px;
   color: var(--text);
+}
+
+.right-side-toc .rightSideBarUL li a:hover,
+.right-side-toc .rightSideBarUL li a:active{
+  color: var(--link);
 }
 
 @media only screen and (max-width: 50rem) {

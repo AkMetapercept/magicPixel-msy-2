@@ -8,7 +8,6 @@ import Breadcrumb from './custom/breadcrumb/breadcrumb.jsx';
 import Header from './Header.js';
 import HomeBanner from './home-banner.js';
 import Footer from './footer/footer.js';
-import Search2 from './custom/search/search-2.jsx';
 
 const LayoutOther = ({ children, location, edges }) => {
   const sidebarRef = React.useRef(null);
@@ -34,8 +33,7 @@ const LayoutOther = ({ children, location, edges }) => {
   }, []);
   return (
     <SidebarContextProvide edges={edges}>
-      <Header location={location} />
-      <Search2 />
+      <Header location={location} />    
       {/* {displayBanner && <HomeBanner />} */}
       {/* <div className="landing-container">
           <div>
